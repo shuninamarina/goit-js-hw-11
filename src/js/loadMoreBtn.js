@@ -1,3 +1,5 @@
+import { onLoadMoreBtnClick } from './helpers/handlers';
+
 class LoadMoreBtn {
   constructor(className, onClick) {
     document.body.insertAdjacentHTML(
@@ -26,4 +28,4 @@ class LoadMoreBtn {
   }
 }
 
-export const loadMoreBtn = new LoadMoreBtn('load-more');
+export const loadMoreBtn = new LoadMoreBtn('load-more', onLoadMoreBtnClick);
